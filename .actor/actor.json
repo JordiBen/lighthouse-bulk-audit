@@ -1,0 +1,88 @@
+{
+  "actorSpecification": 1,
+  "name": "lighthouse-bulk-audit",
+  "title": "Lighthouse Bulk Audit: Core Web Vitals & SEO Scores",
+  "description": "Run real Google Lighthouse audits on hundreds of URLs: performance, accessibility, best-practices and SEO scores, Core Web Vitals (LCP, CLS, TBT, FCP), top fixes, and optional full HTML reports. Mobile, desktop or both. No API key needed.",
+  "version": "1.0",
+  "buildTag": "latest",
+  "input": "./input_schema.json",
+  "dockerfile": "../Dockerfile",
+  "readme": "../README.md",
+  "storages": {
+    "dataset": {
+      "actorSpecification": 1,
+      "views": {
+        "overview": {
+          "title": "Scores & Core Web Vitals",
+          "transformation": {
+            "fields": [
+              "input",
+              "formFactor",
+              "scores.performance",
+              "scores.accessibility",
+              "scores.best-practices",
+              "scores.seo",
+              "metrics.lcpMs",
+              "metrics.cls",
+              "metrics.tbtMs",
+              "metrics.fcpMs",
+              "htmlReportUrl",
+              "error"
+            ]
+          },
+          "display": {
+            "component": "table",
+            "properties": {
+              "input": {
+                "label": "URL",
+                "format": "link"
+              },
+              "formFactor": {
+                "label": "Device"
+              },
+              "scores.performance": {
+                "label": "Perf",
+                "format": "number"
+              },
+              "scores.accessibility": {
+                "label": "A11y",
+                "format": "number"
+              },
+              "scores.best-practices": {
+                "label": "Best pr.",
+                "format": "number"
+              },
+              "scores.seo": {
+                "label": "SEO",
+                "format": "number"
+              },
+              "metrics.lcpMs": {
+                "label": "LCP ms",
+                "format": "number"
+              },
+              "metrics.cls": {
+                "label": "CLS",
+                "format": "number"
+              },
+              "metrics.tbtMs": {
+                "label": "TBT ms",
+                "format": "number"
+              },
+              "metrics.fcpMs": {
+                "label": "FCP ms",
+                "format": "number"
+              },
+              "htmlReportUrl": {
+                "label": "Report",
+                "format": "link"
+              },
+              "error": {
+                "label": "Error"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

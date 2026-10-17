@@ -4,7 +4,6 @@
 
 > **Run it in the cloud with no setup:** [Lighthouse Bulk Audit: Core Web Vitals & SEO Scores on the Apify Store](https://apify.com/manageable_gully/lighthouse-bulk-audit).  
 > Pay only per result, export to JSON/CSV/Excel, schedule runs and call it from the API.
-<!-- Note: the Apify Store page goes live once the Actor is published. -->
 <!-- AFFILIATE_LINK_PLACEHOLDER: replace the Apify links above with the affiliate link when available -->
 
 Runs **real Google Lighthouse audits** (the engine behind PageSpeed Insights) on a list of URLs. You get every result in one table: scores, Core Web Vitals, the biggest fixes, and optionally the full interactive HTML report. You don't need a Google API key or a PageSpeed quota.

@@ -1,8 +1,8 @@
 {
   "actorSpecification": 1,
   "name": "lighthouse-bulk-audit",
-  "title": "Lighthouse Bulk Audit: Core Web Vitals & SEO Scores",
-  "description": "Run real Google Lighthouse audits on hundreds of URLs: performance, accessibility, best-practices and SEO scores, Core Web Vitals (LCP, CLS, TBT, FCP), top fixes, and optional full HTML reports. Mobile, desktop or both. No API key needed.",
+  "title": "Lighthouse & PageSpeed Bulk Audit: Core Web Vitals, SEO",
+  "description": "Run real Google Lighthouse audits (the PageSpeed Insights engine) on hundreds of URLs: performance, accessibility, best-practices and SEO scores, Core Web Vitals (LCP, CLS, TBT, FCP), top fixes and optional HTML reports. Mobile, desktop or both. No API key or quota.",
   "version": "1.0",
   "buildTag": "latest",
   "input": "./input_schema.json",

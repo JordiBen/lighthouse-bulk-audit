@@ -1,0 +1,18 @@
+{
+  "actorOutputSchemaVersion": 1,
+  "title": "Lighthouse bulk audit output",
+  "properties": {
+    "results": {
+      "type": "string",
+      "template": "{{links.apiDefaultDatasetUrl}}/items",
+      "title": "Scores & Core Web Vitals",
+      "description": "One item per URL and device: Lighthouse scores, LCP/CLS/TBT/FCP, top fixes and a link to the HTML report."
+    },
+    "reports": {
+      "type": "string",
+      "title": "HTML reports",
+      "description": "Full Lighthouse HTML reports (only when HTML reports are enabled).",
+      "template": "{{links.apiDefaultKeyValueStoreUrl}}/keys"
+    }
+  }
+}
